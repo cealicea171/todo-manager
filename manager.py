@@ -24,7 +24,7 @@ class Manager():
         ##this is making the variable edit open the text file and read it
         completedTask = input("What Task Did You Complete? ")
         ##then this making the variable completedTask and make it a input and print out the question?
-        s = edit.replace( completedTask, completedTask +  " COMPLETE✔️")
+        s = edit.replace( completedTask, completedTask +  " COMPLETE✔️  TRUE")
         ##(looking , action)
         #(looking, getting it and putting completed beside it.)
         #this is taking the variable s and having it take the user input and add completed next to it.
