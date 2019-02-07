@@ -7,13 +7,6 @@ import item
 # #Mark an item as completed..
 
 
-
-
-
-
-
-
-
 class Manager():
     def showAll():
         readTask = open("todos.txt", "r")
@@ -67,9 +60,7 @@ class Manager():
         ##this is saying take the file1, read it and write the new task you just entered on a new line ..
         file1.close()
         ##this closes the text file
-Manager.showAll()
-Manager.createTask()
-Manager.markComplete()
+
 
 
 

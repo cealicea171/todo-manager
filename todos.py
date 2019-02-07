@@ -1,3 +1,6 @@
+from manager import Manager
+
+
 Manager.showAll()
-Manager.markComplete()
 Manager.createTask()
+Manager.markComplete()
