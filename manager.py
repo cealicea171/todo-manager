@@ -1,10 +1,11 @@
+from item
 # #Make a class called Manager. A single object of this class should be created when you run your script. It should do the following:
 # #Print all of the to-do items in the list.
 # #Add a new item to the list.
 # #Mark an item as completed..
-Item.showAll()
-Item.markComplete()
-Item.createTask()
+class  Manager(Item):
+
+
 
 
 

@@ -16,7 +16,7 @@ class Item():
         #reads the file
         print(message)
         readTask.close()
-
+#..
         ##closes the file
     def markComplete():
         edit = open("todos.txt").read()
