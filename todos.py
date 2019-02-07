@@ -1,3 +1,3 @@
-Item.showAll()
-Item.markComplete()
-Item.createTask()
+Manager.showAll()
+Manager.markComplete()
+Manager.createTask()
