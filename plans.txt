@@ -1,0 +1,28 @@
+--The goal:
+ to create a script that manages your to-do list. It should be able to print a list of them to the terminal, to add new items to the list, and to mark items as completed.
+
+-- Make a class called Item. Objects of this class should have the following attributes:
+   1) A timestamp of when they were created.
+   2) A boolean marking the item as completed or not.
+   3) the text of the actual to-do item.
+
+
+--Make a class called Manager. A single object of this class should be created when you run your script. It should do the following:
+   1) Print all of the to-do items in the list.
+   2) Add a new item to the list.
+   3)Mark an item as completed.
+
+--Each class should be in its own module which you will need to import accordingly.
+
+-- The main file should be called todos.py and is the only file to be run as a script.
+
+-- Your to-do list should be stored in a file called todos.txt. You should never need to edit this file directly, the script should do that for you.
+
+DATETIME- The datetime module supplies classes for manipulating dates and times in both simple and complex ways.
+
+--How will you retrieve the data from the file?
+--How will it be organized so you can break the data into separate values?
+--How can you convert that data into different Python types
+--How will your script work?
+--Will it expect arguments to be passed to it?
+--Will it run like an interactive program like our games?
