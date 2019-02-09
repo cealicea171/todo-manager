@@ -8,25 +8,24 @@ import item
 
 
 class Manager():
-     interactions = {
-          'show_all': showAll(),
-          'create_task': createTask(),
-          'mark_complete': markComplete()
-      }
 
-    def start_todo(self, promp):
-            to_do = Manager.interactions.get(prompt)
+inter = {
+'show_all': showAll(),
+'create_task': createTask(),
+'mark_complete': markComplete()
+}
+
+    def start_todo(self, prompt):
+        to_do = Manager.inter.get(prompt)
             return to_do
 
     def askPrompt():
-    question = input("Would you like to see your tasks?")
+        question = input("Would you like to see your tasks?")
 
-              if question == "yes":
+        if question === "yes":
                   return 'show_all'
 
-
-              elif question == "no": #
-
+        else question === "no": #
                   return 'create_task'
 
 
