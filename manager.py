@@ -1,33 +1,31 @@
 import time
 import datetime
 import item
-# #Make a class called Manager. A single object of this class should be created when you run your script. It should do the following:
-# #Print all of the to-do items in the list.
-# #Add a new item to the list.
-# #Mark an item as completed..
 
+class Manager(object):
 
-class Manager():
+    print('Hi, Welcome to your Reminder App')
 
-inter = {
-'show_all': showAll(),
-'create_task': createTask(),
-'mark_complete': markComplete()
-}
+    def startUp():
 
-    def start_todo(self, prompt):
-        to_do = Manager.inter.get(prompt)
-            return to_do
+        print('A : Would you like to see your tasks?')
+        print('B : Would you like to create a task?')
+        print('C : Would you like to mark a task complete?')
 
-    def askPrompt():
-        question = input("Would you like to see your tasks?")
+        decision = input('> ')
 
-        if question === "yes":
-                  return 'show_all'
+        if decision.lower() == 'A':
+            Manager.showAll()
+            Manager.startUp()
 
-        else question === "no": #
-                  return 'create_task'
+        elif decision.lower() == 'B':
+            Manager.createTask()
 
+        elif decision.lower() == 'C':
+            Manager.markComplete()
+
+        else:
+            Manager.startUp()
 
     def showAll():
         readTask = open("todos.txt", "r")
@@ -81,6 +79,11 @@ inter = {
         ##this is saying take the file1, read it and write the new task you just entered on a new line ..
         file1.close()
         ##this closes the text file
+Manager()
+Manager.startUp()
+Manager.showAll()
+Manager.markComplete()
+Manager.createTask()
 
 
 
@@ -107,8 +110,31 @@ inter = {
 
 
 
+# #Make a class called Manager. A single object of this class should be created when you run your script. It should do the following:
+# #Print all of the to-do items in the list.
+# #Add a new item to the list.
+# #Mark an item as completed..
 
 
+
+
+    #inter = {
+    #'show_all': showAll(),
+    #'create_task': createTask(),
+    #'mark_complete': markComplete(),
+    #'ask_prompt': askPrompt()
+    #
+
+    #def askPrompt():
+    #    question = input("Would you like to see your tasks?")
+##        if question == "yes":
+    #        return 'show_all'
+
+    #    elif question == "no": #
+    ##         return 'create_task'
+
+    ##    else:
+    #        return 'ask_prompt'
 
 
 
