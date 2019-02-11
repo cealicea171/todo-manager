@@ -8,20 +8,20 @@ class Manager(object):
 
     def startUp():
 
-        print('A : Would you like to see your tasks?')
-        print('B : Would you like to create a task?')
-        print('C : Would you like to mark a task complete?')
+        print('1 : Would you like to see your tasks?')
+        print('2: Would you like to create a task?')
+        print('3: Would you like to mark a task complete?')
 
         decision = input('> ')
 
-        if decision.lower() == 'A':
+        if  decision == '1':
             Manager.showAll()
             Manager.startUp()
 
-        elif decision.lower() == 'B':
+        elif decision == '2':
             Manager.createTask()
 
-        elif decision.lower() == 'C':
+        elif decision == '3':
             Manager.markComplete()
 
         else:
@@ -43,7 +43,7 @@ class Manager(object):
         ##this is making the variable edit open the text file and read it
         completedTask = input("What Task Did You Complete? ")
         ##then this making the variable completedTask and make it a input and print out the question?
-        s = edit.replace( completedTask, completedTask +  " COMPLETE✔️ " + str(True))
+        s = edit.replace( completedTask, completedTask +  " COMPLETE✅ " + str(True))
         ##(looking , action)
         #(looking, getting it and putting completed beside it.)
         #this is taking the variable s and having it take the user input and add completed next to it.
@@ -78,12 +78,12 @@ class Manager(object):
 
         ##this is saying take the file1, read it and write the new task you just entered on a new line ..
         file1.close()
+        Manager.startUp()
+
         ##this closes the text file
 Manager()
 Manager.startUp()
-Manager.showAll()
-Manager.markComplete()
-Manager.createTask()
+
 
 
 
