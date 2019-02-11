@@ -1,13 +1,32 @@
 import time
 import datetime
 import item
-# #Make a class called Manager. A single object of this class should be created when you run your script. It should do the following:
-# #Print all of the to-do items in the list.
-# #Add a new item to the list.
-# #Mark an item as completed..
 
+class Manager(object):
 
-class Manager():
+    print('Hi, Welcome to your Reminder App')
+
+    def startUp():
+
+        print('1 : Would you like to see your tasks?')
+        print('2: Would you like to create a task?')
+        print('3: Would you like to mark a task complete?')
+
+        decision = input('> ')
+
+        if  decision == '1':
+            Manager.showAll()
+            Manager.startUp()
+
+        elif decision == '2':
+            Manager.createTask()
+
+        elif decision == '3':
+            Manager.markComplete()
+
+        else:
+            Manager.startUp()
+
     def showAll():
         readTask = open("todos.txt", "r")
         ##(file, action)
@@ -24,7 +43,7 @@ class Manager():
         ##this is making the variable edit open the text file and read it
         completedTask = input("What Task Did You Complete? ")
         ##then this making the variable completedTask and make it a input and print out the question?
-        s = edit.replace( completedTask, completedTask +  " COMPLETE✔️ " + str(True))
+        s = edit.replace( completedTask, completedTask +  " COMPLETE✅ " + str(True))
         ##(looking , action)
         #(looking, getting it and putting completed beside it.)
         #this is taking the variable s and having it take the user input and add completed next to it.
@@ -59,7 +78,11 @@ class Manager():
 
         ##this is saying take the file1, read it and write the new task you just entered on a new line ..
         file1.close()
+        Manager.startUp()
+
         ##this closes the text file
+Manager()
+Manager.startUp()
 
 
 
@@ -87,7 +110,31 @@ class Manager():
 
 
 
+# #Make a class called Manager. A single object of this class should be created when you run your script. It should do the following:
+# #Print all of the to-do items in the list.
+# #Add a new item to the list.
+# #Mark an item as completed..
 
+
+
+
+    #inter = {
+    #'show_all': showAll(),
+    #'create_task': createTask(),
+    #'mark_complete': markComplete(),
+    #'ask_prompt': askPrompt()
+    #
+
+    #def askPrompt():
+    #    question = input("Would you like to see your tasks?")
+##        if question == "yes":
+    #        return 'show_all'
+
+    #    elif question == "no": #
+    ##         return 'create_task'
+
+    ##    else:
+    #        return 'ask_prompt'
 
 
 
